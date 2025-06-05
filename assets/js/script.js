@@ -82,18 +82,13 @@ const filter = function () {
 
   filterBox.setAttribute("data-filter", this.dataset.filterBtn);
 
-
   const selectedFilter = this.dataset.filterBtn;
   const productItems = document.querySelectorAll('.grid-list.product-list > li');
 
   productItems.forEach(item => {
     if (selectedFilter === "all") {
-   
-      if (item.classList.contains("herramientas")) {
-        item.style.display = "none";
-      } else {
-        item.style.display = "";
-      }
+
+      item.style.display = "";
     } else {
     
       if (item.classList.contains(selectedFilter)) {
@@ -103,7 +98,6 @@ const filter = function () {
       }
     }
   });
-
 }
 
 addEventOnElem(filterBtns, "click", filter);
