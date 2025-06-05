@@ -80,7 +80,30 @@ const filter = function () {
   this.classList.add("active");
   lastClickedFilterBtn = this;
 
-  filterBox.setAttribute("data-filter", this.dataset.filterBtn)
+  filterBox.setAttribute("data-filter", this.dataset.filterBtn);
+
+
+  const selectedFilter = this.dataset.filterBtn;
+  const productItems = document.querySelectorAll('.grid-list.product-list > li');
+
+  productItems.forEach(item => {
+    if (selectedFilter === "all") {
+   
+      if (item.classList.contains("herramientas")) {
+        item.style.display = "none";
+      } else {
+        item.style.display = "";
+      }
+    } else {
+    
+      if (item.classList.contains(selectedFilter)) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    }
+  });
+
 }
 
 addEventOnElem(filterBtns, "click", filter);
