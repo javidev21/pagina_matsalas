@@ -69,35 +69,24 @@ addEventOnElem(window, "scroll", showElemOnScroll);
 /**
  * product filter
  */
-
-const filterBtns = document.querySelectorAll("[data-filter-btn]");
-const filterBox = document.querySelector("[data-filter]");
-
-let lastClickedFilterBtn = filterBtns[0];
-
-const filter = function () {
-  lastClickedFilterBtn.classList.remove("active");
-  this.classList.add("active");
-  lastClickedFilterBtn = this;
-
-  filterBox.setAttribute("data-filter", this.dataset.filterBtn);
-
-  const selectedFilter = this.dataset.filterBtn;
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll("[data-filter-btn]");
   const productItems = document.querySelectorAll('.grid-list.product-list > li');
 
-  productItems.forEach(item => {
-    if (selectedFilter === "all") {
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Quitar clase activa de todos los botones
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const selectedFilter = this.dataset.filterBtn;
 
-      item.style.display = "";
-    } else {
-    
-      if (item.classList.contains(selectedFilter)) {
-        item.style.display = "";
-      } else {
-        item.style.display = "none";
-      }
-    }
+      productItems.forEach(item => {
+        if (selectedFilter === "all") {
+          item.style.display = "";
+        } else {
+          item.style.display = item.classList.contains(selectedFilter) ? "" : "none";
+        }
+      });
+    });
   });
-}
-
-addEventOnElem(filterBtns, "click", filter);
+});
