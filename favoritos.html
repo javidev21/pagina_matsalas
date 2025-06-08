@@ -222,144 +222,103 @@
   <main>
     <article>
 
-        - #PRODUCTS
-      -->
+  <!-- Mostrar favoritos guardados -->
+  <section class="section product" id="favorites" aria-label="favorites">
+    <div class="container">
+      <h2 class="h2 section-title">Mis Favoritos</h2>
+      <ul class="grid-list product-list" id="favorites-list"></ul>
+    </div>
+  </section>
 
-      <section class="section product" id="product" aria-label="product">
-        <div class="container">
+  <script>
+  // Define aquí todos tus productos favoritos posibles
+  const productos = {
+    "Venus": {
+      nombre: "Venus",
+      precio: "$1,501",
+      imagen: "./assets/images/venus_inodoro.jpg"
+    },
+    "Gaetta": {
+      nombre: "Gaetta",
+      precio: "$2,341",
+      imagen: "./assets/images/indoro_gaetta.jpg"
+    },
+    "Livorno": {
+      nombre: "Livorno",
+      precio: "$1,740",
+      imagen: "./assets/images/indoro_livorno.jpg"
+    },
+    "Genova": {
+      nombre: "Genova",
+      precio: "$1,740",
+      imagen: "./assets/images/genova_inodoro.jpg"
+    },
+    "Santoro": {
+      nombre: "Santoro",
+      precio: "$2,341",
+      imagen: "./assets/images/santoro_inodoro.jpg"
+    },
+    "Piso_mazarello": {
+      nombre: "Piso_mazarello",
+      precio: "$468",
+      imagen: "./assets/images/mazarello_piso.png"
+    }
+    // No pongas comentarios dentro del objeto, agrégalos fuera
+  };
 
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">Promociones</h2>
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const list = document.getElementById('favorites-list');
+  const phoneNumber = '526751056874'; // Reemplaza con tu número de WhatsApp
 
-            <ul class="filter-btn-list">
-
-              <li class="filter-btn-item">
-                <button class="filter-btn active" data-filter-btn="all">Todas las promociones</button>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="grid-list product-list" data-filter="all">
-
-            <li class="decoration">
-              <div class="product-card">
-
-                <a href="https://wa.me/526751056874" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="imagenes_/promocion1.jpg" width="300" height="300" loading="lazy"
-                    alt="Animi Dolor Pariatur" class="img-cover">
-                  <ul class="badge-list">
-                    <li>
-                      <div class="badge orange">Venta</div>
-                    </li>
-
-                    <li>
-                      <div class="badge cyan">-42.5%</div>
-                    </li>
-
-                  </ul>
-                </a>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="https://wa.me/526751056874" class="card-title">AISLAMAX</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <del class="del">$1389</del>
-
-                    <data class="price" value="10">$799</data>
-                  </div>
+  if (favorites.length === 0) {
+    list.innerHTML = "<li>No tienes productos favoritos.</li>";
+  } else {
+    let html = "";
+    favorites.forEach(producto => {
+      const info = productos[producto];
+      if (info) {
+        html += `
+          <li>
+            <div class="product-card">
+              <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                <img src="${info.imagen}" width="300" height="300" loading="lazy" alt="${info.nombre}" class="img-cover">
+                <ul class="card-action-list">
+                  <li>
+                    <button class="card-action-btn buy-btn" data-product="${producto}" aria-label="add to cart" title="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </li>
+                </ul>
+              </a>
+              <div class="card-content">
+                <h3 class="h3">${info.nombre}</h3>
+                <div class="card-price">
+                  <data class="price">${info.precio}</data>
                 </div>
-
               </div>
-            </li>
+            </div>
+          </li>
+        `;
+      }
+    }); // <-- Este es el cierre correcto del forEach
+    list.innerHTML = html;
 
-            <li class="accessory">
-              <div class="product-card">
+    // Asigna el evento a los botones generados dinámicamente
+    const buyBtns = document.querySelectorAll('.buy-btn');
+    buyBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const product = btn.dataset.product || 'producto';
+        const message = encodeURIComponent(`Hola, quiero comprar el producto: ${product}`);
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+      });
+    });
+  }
+  </script>
 
-                <a href="https://wa.me/526751056874" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="imagenes_/promocion2.jpg" width="300" height="300" loading="lazy"
-                    alt="Art Deco Home" class="img-cover">
-                  <ul class="badge-list">
-                    <li>
-                      <div class="badge orange">Venta</div>
-                    </li>
+</article>
+    </article>
 
-                    <li>
-                      <div class="badge cyan">-33.5%</div>
-                    </li>
-
-                  </ul>
-                   
-                </a>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="https://wa.me/526751056874" class="card-title">IMPER MAXI + KOVER(GRATIS)</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <del class="del">$1000</del>
-
-                    <data class="price" value="10">$665</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="decoration">
-              <div class="product-card">
-
-                <a href="https://wa.me/526751056874" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="imagenes_/promocion3.jpg" width="300" height="300" loading="lazy"
-                    alt="Artificial potted plant" class="img-cover">
-                  <ul class="badge-list">
-                    <li>
-                      <div class="badge orange">Venta</div>
-                    </li>
-
-                    <li>
-                      <div class="badge cyan">-21.7%</div>
-                    </li>
-
-                  </ul>
-                </a>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="https://wa.me/526751056874" class="card-title">VENTILADOR ASPA PLÁSTICA</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <del class="del">$420</del>
-
-                    <data class="price" value="10">$329</data>
-                  </div>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="accessory">
-              <div class="product-card">
-                  <img src="imagenes_/proximamente_logo.png" width="300" height="300" loading="lazy" alt="Dark Green Jug"
-                    class="img-cover">
-                </a>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title"></a>
-                    <P>PRÓXIMAMENTE MÁS PROMOCIONES...</P>
-                  </h3>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
+       
   <!-- 
     - #FOOTER
   -->

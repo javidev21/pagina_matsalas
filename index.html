@@ -69,9 +69,9 @@
         <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
       </a>
 
-      <a href="/favorites" class="header-action-btn" aria-label="favorite list">
+      <a href="favoritos.html" class="header-action-btn" aria-label="favorite list" id="favorite-link">
         <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-        <span class="btn-badge">0</span>
+        <span class="btn-badge" id="favorite-count">0</span>
       </a>
 
       <a href="promociones.html" class="header-action-btn" aria-label="cart">
@@ -271,21 +271,14 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Livorno" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -316,21 +309,14 @@
                       alt="Gaetta" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Gaetta"aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -359,21 +345,14 @@
                       alt="Dark Green Jug" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Venus" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -402,21 +381,14 @@
                       alt="genova" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Genova" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -445,21 +417,14 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Santoro"aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -488,15 +453,8 @@
                       alt="High Quality Glass Bottle" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -531,15 +489,8 @@
                       alt="verttoni" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -574,15 +525,8 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -617,15 +561,8 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -641,7 +578,7 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Piso Travalí</a>
+                      <a href="#"class="card-title">Piso Travalí</a>
                     </h3>
 
                     <div class="card-price">
@@ -660,21 +597,14 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso_mazarello" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -703,15 +633,8 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -746,15 +669,8 @@
                       alt="calentador_8" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -789,15 +705,8 @@
                       alt="calentador_10" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn"aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -832,15 +741,8 @@
                       alt="calentador_12" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -875,15 +777,8 @@
                       alt="ventilador_plastico" class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -918,15 +813,8 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -961,15 +849,8 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -1004,15 +885,8 @@
                       class="img-cover">
 
                     <ul class="card-action-list">
-
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -1041,16 +915,11 @@
 
               <li class="inodoros">
                 <div class="product-card">
-                  <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <a href="#"class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
                     <img src="./assets/images/tinaco_poder.jpg" width="300" height="300" loading="lazy" alt="tinaco_poder" class="img-cover">
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                          <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                        </button>
-                      </li>
-                      <li>
-                        <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -1473,7 +1342,33 @@
   chat-title="Ferrebot"
   agent-id="bfd2dc37-70bb-4ac2-a5ce-bac9331b42d2"
   language-code="es"
-></df-messenger>                
+></df-messenger>       
+
+<script>
+  // Espera a que el DOM esté listo
+  document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona todos los botones de favoritos
+    document.querySelectorAll('.favorite-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const producto = btn.getAttribute('data-product');
+        // Obtiene el array de favoritos o crea uno nuevo
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        // Solo agrega si no está repetido
+        if (!favorites.includes(producto)) {
+          favorites.push(producto);
+          localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        // Actualiza el contador visual (opcional)
+        const count = document.getElementById('favorite-count');
+        if (count) count.textContent = favorites.length;
+      });
+    });
+    // Al cargar, actualiza el contador visual
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    const count = document.getElementById('favorite-count');
+    if (count) count.textContent = favorites.length;
+  });
+</script>
 </body>
 
 </html>
