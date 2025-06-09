@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
   buyBtns.forEach(btn => {
     btn.addEventListener('click', function() {
       const product = btn.dataset.product || 'producto';
-      const message = encodeURIComponent(`Hola, quiero comprar el producto: ${product}`);
+      const message = encodeURIComponent(` Hola, estoy interesado en comprar el ${product}. ¿Podrías darme más información?`);
       window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     });
   });
