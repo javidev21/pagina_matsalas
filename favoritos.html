@@ -209,13 +209,77 @@
       nombre: "Piso_mazarello",
       precio: "$468",
       imagen: "./assets/images/mazarello_piso.png"
-    }
-    // No pongas comentarios dentro del objeto, agrégalos fuera
+    },
+    "Piso_Mare": {
+      nombre: "Piso_Mare",
+      precio: "$469",
+      imagen: "./assets/images/piso_mare.png"
+    },
+    "Piso Verttoni": {
+      nombre: "Piso_Verttoni",
+      precio: "$460",
+      imagen: "./assets/images/verttoni_piso.png"
+    },
+    "Piso Bottura": {
+      nombre: "Piso_Bottura",
+      precio: "$371",
+      imagen: "./assets/images/bottura_latte_piso.png"
+    },
+    "Piso Travali": {
+      nombre: "Piso_Travali",
+      precio: "$522",
+      imagen: "./assets/images/travali_piso.png"
+    },
+    "Piso Aranza": {
+      nombre: "Piso_Aranza",
+      precio: "$474",
+      imagen: "./assets/images/aranza_piso.png"
+    },
+    "Calentador 8": {
+      nombre: "Calentador_8",
+      precio: "$2,635",
+      imagen: "./assets/images/calentador_8_tubos.jpg"
+    },
+    "Calentador 10": {
+      nombre: "Calentador_10",
+      precio: "$2,911",
+      imagen: "./assets/images/calentador_10_tubos.jpg"
+    },
+    "Calentador 12": {
+      nombre: "Calentador_12",
+      precio: "$3,294",
+      imagen: "./assets/images/calentador_12_tubos.jpg"
+    },
+    "Ventilador plastico": {
+      nombre: "Ventilador_plastico",
+      precio: "$399",
+      imagen: "./assets/images/ventilador_plastico.jpg"
+    },
+    "Ventilador 3 en 1": {
+      nombre: "Ventilador_3_en_1",
+      precio: "$649",
+      imagen: "./assets/images/ventilador_3en1_metal.jpg"
+    },
+    "Aire Inverter": {
+      nombre: "Aire_Inverter",
+      precio: "$6,749",
+      imagen: "./assets/images/aire_acondicionado_inverter.jpg"
+    },
+    "Aire Minisplit": {
+      nombre: "Aire_Minisplit",
+      precio: "$5,399",
+      imagen: "./assets/images/aire_acondicionado_minisplit.jpg"
+    },
+    "Tinaco poder": {
+      nombre: "Tinaco_poder",
+      precio: "$1,699",
+      imagen: "./assets/images/tinaco_poder.jpg"
+    },
   };
 
   const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const list = document.getElementById('favorites-list');
-  const phoneNumber = '526751056874'; // Reemplaza con tu número de WhatsApp
+  const phoneNumber = '526751056874';
 
   if (favorites.length === 0) {
     list.innerHTML = "<li>No tienes productos favoritos.</li>";
@@ -247,7 +311,7 @@
           </li>
         `;
       }
-    }); // <-- Este es el cierre correcto del forEach
+    });
     list.innerHTML = html;
 
     // Asigna el evento a los botones generados dinámicamente
