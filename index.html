@@ -115,7 +115,7 @@
         <li class="navbar-item">
           <a href="#product" class="navbar-link" data-nav-link>Productos</a>
         </li>
-        
+
       </ul>
     </nav>
 
@@ -218,7 +218,7 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Livorno" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -236,8 +236,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Livorno</a>
+                      <a href="#" class="card-title toggle-desc">Livorno</a>
                     </h3>
+                      <p class="product-description" style="display:none;">
+                          Livorno: el equilibrio perfecto entre funcionalidad y diseño italiano.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="30">$1,740</data>
@@ -256,7 +259,7 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Gaetta" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -272,8 +275,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Gaetta</a>
+                      <a href="#" class="card-title toggle-desc">Gaetta</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Inodoro Gaetta, la opción confiable para quienes buscan calidad y diseño.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="40">$2,341</data>
@@ -292,7 +298,7 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Venus" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -308,8 +314,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Venus</a>
+                      <a href="#" class="card-title toggle-desc">Venus</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Venus: el inodoro que une comodidad y diseño para un baño de otro nivel.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="17.10">$1,501</data>
@@ -328,7 +337,7 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Genova" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -344,8 +353,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Genova</a>
+                      <a href="#" class="card-title toggle-desc">Genova</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Inodoro Genova, pensado para quienes valoran el confort y la eficiencia en cada uso.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="21">$1,740</data>
@@ -364,13 +376,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Santoro" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn favorite-btn" data-product="Santoro"aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Santoro" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -380,8 +392,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Santoro</a>
+                      <a href="#" class="card-title toggle-desc">Santoro</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Santoro: tecnología de descarga avanzada y materiales de primera para tu tranquilidad.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="69.50">$2,341</data>
@@ -400,13 +415,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Piso Mare" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso Mare"  aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -416,8 +431,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Piso Mare</a>
+                      <a  href="#" class="card-title toggle-desc">Piso Mare</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                        Piedra brillante de pasta Gres, en formato rectificado de 61x61 cm, ideal para aplicaciones residenciales en pisos o muros.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="30.10">$469</data>
@@ -436,13 +454,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn"data-product="Piso Verttoni" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso Verttoni" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -452,8 +470,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Piso verttoni</a>
+                      <a href="#" class="card-title toggle-desc">Piso verttoni</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Destaca como un piso gres tipo mármol, con un acabado brillante y formato rectificado de 61x61 cm
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="45">$460</data>
@@ -472,13 +493,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn"data-product="Piso Bottura" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso Bottura" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -488,8 +509,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Piso bottura latte </a>
+                      <a href="#" class="card-title toggle-desc">Piso bottura latte </a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Piso Gres de 61x61 cm rectificado, acabado tipo Piedra Brillante, ideal para recámaras, salas, baños y cocinas. 
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="90">$371</data>
@@ -508,13 +532,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn"  data-product="Piso Travali" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso Travali"  aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -524,8 +548,13 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#"class="card-title">Piso Travalí</a>
+                      <a href="#" class="card-title toggle-desc">Piso Travalí</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Piso tipo mármol brillante de pasta gres, en formato cuadrado de 61x61 cm 
+                          rectificado, ideal para interiores como: cocinas, baños, salas,
+                           recamaras, comedores, pasillos, estudios, etc. 
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="40">$522</data>
@@ -544,13 +573,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Piso mazarello" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn favorite-btn" data-product="Piso_mazarello" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso mazarello" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -560,8 +589,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Piso mazarello</a>
+                      <a href="#" class="card-title toggle-desc">Piso mazarello</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                           Este producto, diseñado específicamente para uso residencial, resulta ideal para aplicaciones en interiores tales como estudios, salas, pasillos y recámaras.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="46">$468</data>
@@ -580,13 +612,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn"data-product="Piso Aranza"  aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Piso Aranza" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -596,8 +628,14 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Piso aranza</a>
+                      <a href="#" class="card-title toggle-desc">Piso aranza</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                         Para uso residencial , esté producto puede ser colocado en pisos,
+                          está preparado para recibir un bajo tráfico de personas, 
+                          tiene un diseño en acabado brillante, en color beige.
+                           Fácil de limpiar
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="67">$474</data>
@@ -616,13 +654,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Calentador 8"  aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Calentador 8"  aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -632,8 +670,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Solar 8 tubos </a>
+                      <a href="#" class="card-title toggle-desc">Solar 8 tubos </a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Calentador solar de 8 tubos: agua caliente todo el año, ahorrando energía y dinero.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="50">$2,635</data>
@@ -652,13 +693,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn"aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Calentador 10" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Calentador 10"  aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -668,8 +709,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Solar 10 tubos</a>
+                      <a href="#" class="card-title toggle-desc">Solar 10 tubos</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Olvídate del gas y la electricidad: tu baño siempre cálido con nuestro calentador de 10 tubos.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="25">$2,911</data>
@@ -688,13 +732,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Calentador 12"  aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Calentador 12"  aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -704,8 +748,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Solar 12 tubos</a>
+                      <a href="#" class="card-title toggle-desc">Solar 12 tubos</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Agua caliente abundante y constante, incluso en temporadas frías.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="15">$3,294</data>
@@ -724,13 +771,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Ventilador plastico" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Ventilador plastico" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -740,8 +787,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Ventilador Plastico</a>
+                      <a href="#" class="card-title toggle-desc">Ventilador Plastico</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Ventilador eficiente y silencioso, ideal para el hogar, oficina o negocio.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="77">$399</data>
@@ -760,13 +810,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Ventilador 3 en 1" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Ventilador 3 en 1" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -776,8 +826,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Ventilador 3 en 1 </a>
+                      <a href="#" class="card-title toggle-desc">Ventilador 3 en 1 </a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                         Ventilador robusto y elegante, pensado para durar y rendir al máximo.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="19">$649</data>
@@ -796,13 +849,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Aire Inverter" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Aire Inverter" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -812,8 +865,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Aire acondicionado Inverter</a>
+                      <a href="#" class="card-title toggle-desc">Aire acondicionado Inverter</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                         Disfruta de un ambiente fresco y silencioso con tecnología Inverter de última generación.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="27">$6,749</data>
@@ -832,13 +888,13 @@
 
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn"  data-product="Aire Minisplit" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Aire Minisplit" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
@@ -848,8 +904,11 @@
 
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Aire acondicionado Minisplit</a>
+                      <a href="#" class="card-title toggle-desc">Aire acondicionado Minisplit</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          El aliado perfecto para tu descanso: enfría rápido y mantiene el ambiente agradable.
+                      </p>
 
                     <div class="card-price">
                       <data class="price" value="29">$5,399</data>
@@ -865,23 +924,25 @@
                     <img src="./assets/images/tinaco_poder.jpg" width="300" height="300" loading="lazy" alt="tinaco_poder" class="img-cover">
                     <ul class="card-action-list">
                       <li>
-                        <button class="card-action-btn buy-btn" aria-label="add to cart" title="add to cart">
+                        <button class="card-action-btn buy-btn" data-product="Tinaco poder" aria-label="add to cart" title="add to cart">
                           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
                       <li>
-                        <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
+                        <button class="card-action-btn favorite-btn" data-product="Tinaco poder" aria-label="add to whishlist" title="add to whishlist">
                           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                         </button>
                       </li>
 
                     </ul>
-
+                    
                   </a>
                   <div class="card-content">
                     <h3 class="h3">
-                      <a href="#" class="card-title">Tinaco Poder 1,100L</a>
+                      <a href="#" class="card-title toggle-desc">Tinaco Poder 1,100L</a>
                     </h3>
+                    <p class="product-description" style="display:none;">
+                          Tinaco Poder: fácil de instalar, fácil de limpiar y con protección contra rayos UV.
                     <div class="card-price">
                       <data class="price" value="99">$1,699</data>
                     </div>
@@ -1161,6 +1222,18 @@
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     const count = document.getElementById('favorite-count');
     if (count) count.textContent = favorites.length;
+  });
+</script>
+<script>
+  document.querySelectorAll('.toggle-desc').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Busca el siguiente elemento p.product-description
+      var desc = link.parentElement.nextElementSibling;
+      if (desc && desc.classList.contains('product-description')) {
+        desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+      }
+    });
   });
 </script>
 </body>

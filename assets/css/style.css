@@ -1148,3 +1148,10 @@ a.card-meta-text:is(:hover, :focus) { color: var(--tan-crayola); }
 #favorites {
     margin-top: 100px;
   }
+
+/* Estilo para la descripcion del producto */
+.product-description {
+  font-size: 1em;
+  color: #555;
+  margin: 0.5em 0 0.5em 0;
+}
