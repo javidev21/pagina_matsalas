@@ -993,7 +993,7 @@
   <h2 style="font-size:2em; margin-bottom:1em;">Preguntas Frecuentes</h2>
 
   <div>
-    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
+    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display='block'; return false;">
       ¿Por qué confiar en nosotros?
     </button>
     <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d;">
@@ -1002,7 +1002,7 @@
   </div>
 
   <div>
-    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
+    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display='block'; return false;">
       ¿Puedo comprar si estoy en provincia? ¿Cómo pago?
     </button>
     <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d;">
@@ -1011,7 +1011,7 @@
   </div>
 
   <div>
-    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">
+    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display='block'; return false;">
       ¿Cómo sé qué producto me conviene más?
     </button>
     <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d;">
@@ -1033,16 +1033,19 @@
           <a href="#" class="logo">Materiales Salas</a>
           
           <ul>
+             <p class="footer-list-title">Siguenos y mantente conectado:</p>
+             <ul class="social-list">
 
-              <ul class="social-list">
+                  <li>
+          <a href="https://www.facebook.com/MaterialesSalas" target="_blank" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
 
-                <li>
-                  <p class="footer-list-title">Siguenos y mantente conectado:</p>
-                
-                  <a href="https://www.facebook.com/MaterialesSalas" target="_blank" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
+        <li>
+          <a href="https://www.instagram.com/materialessalas/" target="_blank" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
 
               </ul>
             </li>
@@ -1062,7 +1065,7 @@
           </li>
  
           <li>
-            <a href="#" class="footer-link">Devoluciones y reembolsos</a>
+            <a href="#" class="footer-link" onclick="document.getElementById('modal-devoluciones').style.display='block'; return false;">Devoluciones y reembolsos</a>
           </li>
 
          
@@ -1085,7 +1088,7 @@
           </li>
 
           <li>
-            <a href="contacto.html" target="_blank" class="footer-link">Contáctanos</a>
+            <a href="tel:+526758652058" class="footer-link">Contáctanos</a>
           </li>
 
         </ul>
@@ -1165,9 +1168,9 @@
       <h3>3. Productos y Compras</h3>
       <ul>
         <li><b>Disponibilidad:</b> Nos esforzamos por mantener nuestro inventario actualizado, pero la disponibilidad puede variar. Si un producto no está en stock, te notificaremos lo antes posible.</li>
-        <li><b>Precios:</b> Los precios se muestran en [moneda local, ej. MXN] e incluyen impuestos aplicables. Los costos de envío se calcularán al finalizar tu compra.</li>
+        <li><b>Precios:</b> Los precios se muestran en moneda local, MXN e incluyen impuestos aplicables. Los costos de envío se calcularán al finalizar tu compra.</li>
         <li><b>Errores tipográficos:</b> Si un precio aparece incorrecto por error (como un taladro a $1), nos reservamos el derecho de corregirlo y notificarte antes de procesar tu pedido.</li>
-        <li><b>Pagos:</b> Aceptamos [menciona métodos de pago, ej. tarjeta de crédito, PayPal, transferencias]. Todas las transacciones son seguras y encriptadas, como un candado de alta seguridad.</li>
+        <li><b>Pagos:</b> Aceptamos tarjeta de crédito, PayPal, transferencias. Todas las transacciones son seguras y encriptadas, como un candado de alta seguridad.</li>
       </ul>
       <h3>4. Envíos y Entregas</h3>
       <ul>
@@ -1178,8 +1181,30 @@
   </div>
 
 
-  
-
+  <div id="modal-devoluciones" class="modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5);">
+  <div style="background:#fff; max-width:600px; margin:5% auto; padding:2em; border-radius:8px; position:relative; max-height:90vh; overflow-y:auto;">
+    <button onclick="document.getElementById('modal-devoluciones').style.display='none'" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:1.5em;">&times;</button>
+    <h2>Devoluciones y Reembolsos</h2>
+    <p>
+      En <strong>Materiales Salas</strong> queremos que estés satisfecho con tu compra. Si tu producto presenta algún defecto de fábrica o no es lo que esperabas, puedes solicitar una devolución dentro de los primeros 7 días naturales después de recibirlo.
+    </p>
+    <ul>
+      <li>El producto debe estar sin usar, en su empaque original y con todos sus accesorios.</li>
+      <li>Presentar tu ticket o comprobante de compra.</li>
+      <li>Los reembolsos se procesan en un plazo de 3 a 5 días hábiles después de recibir y revisar el producto.</li>
+      <li>No aplican devoluciones en productos con daño por mal uso o instalación incorrecta.</li>
+      <li>Para iniciar el proceso, contáctanos por WhatsApp.</li>
+      <li class="contact-item">
+        <a href="https://wa.me/526751056874" target="_blank" class="contact-link">
+          <ion-icon name="logo-WhatsApp"></ion-icon>
+        </a>
+      </li>
+    </ul>
+    <p>
+      ¡Gracias por confiar en nosotros!
+    </p>
+  </div>
+</div>
 
   <!-- 
     - custom js link
