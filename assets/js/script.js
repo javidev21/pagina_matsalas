@@ -137,3 +137,20 @@ document.addEventListener('DOMContentLoaded', function() {
   updateFavoriteCount();
   markFavorites();
 });
+
+let lastScroll = 0;
+const banner = document.getElementById('banner-logo');
+
+window.addEventListener('scroll', function() {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScroll) {
+    // Bajando: ocultar banner
+    banner.style.top = "-120px";
+    banner.style.opacity = "0";
+  } else {
+    // Subiendo: mostrar banner
+    banner.style.top = "0";
+    banner.style.opacity = "1";
+  }
+  lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+});
