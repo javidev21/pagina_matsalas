@@ -1,0 +1,32 @@
+/* Animación de zoom y sombra al pasar el mouse por la imagen principal */
+.card-banner.img-holder {
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.card-banner.img-holder:hover {
+  box-shadow: 0 8px 32px rgba(0,80,157,0.18), 0 2px 12px rgba(0,0,0,0.12);
+}
+.card-banner.img-holder img.img-cover {
+  transition: transform 0.4s cubic-bezier(.23,1.01,.32,1);
+}
+.card-banner.img-holder:hover img.img-cover {
+  transform: scale(1.07) rotate(-2deg);
+}
+
+/* Animación de hover para los cuadros de valores */
+.valor-card {
+  transition: transform 0.25s cubic-bezier(.23,1.01,.32,1), box-shadow 0.25s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.valor-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 32px rgba(0,80,157,0.10), 0 2px 12px rgba(0,0,0,0.08);
+  background: #eaf4ff;
+}
+.valor-card:hover ion-icon {
+  color: #ff6600;
+  transform: scale(1.15) rotate(-8deg);
+  transition: color 0.3s, transform 0.3s;
+}

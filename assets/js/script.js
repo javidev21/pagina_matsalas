@@ -154,3 +154,41 @@ window.addEventListener('scroll', function() {
   }
   lastScroll = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+const testimonios = document.querySelectorAll('.testimonio');
+let idx = 0;
+function showTestimonio(i) {
+  testimonios.forEach((t, j) => t.classList.toggle('activo', i === j));
+}
+document.querySelector('.carrusel .prev').onclick = () => {
+  idx = (idx - 1 + testimonios.length) % testimonios.length;
+  showTestimonio(idx);
+}
+document.querySelector('.carrusel .next').onclick = () => {
+  idx = (idx + 1) % testimonios.length;
+  showTestimonio(idx);
+}
+
+// Carrusel de comentarios animado
+document.addEventListener('DOMContentLoaded', function() {
+  const comentarios = document.querySelectorAll('.carrusel-comentarios .comentario');
+  const prevBtn = document.querySelector('.carrusel-btn.prev');
+  const nextBtn = document.querySelector('.carrusel-btn.next');
+  let idx = 0;
+
+  function showComentario(nuevoIdx) {
+    comentarios[idx].classList.remove('activo');
+    comentarios[nuevoIdx].classList.add('activo');
+    idx = nuevoIdx;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    let nuevoIdx = (idx - 1 + comentarios.length) % comentarios.length;
+    showComentario(nuevoIdx);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    let nuevoIdx = (idx + 1) % comentarios.length;
+    showComentario(nuevoIdx);
+  });
+});
