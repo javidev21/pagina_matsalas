@@ -183,7 +183,7 @@
 
             <div class="title-wrapper">
 
-              <ul style="position: absolute;left: 20%;"  class="filter-btn-list">
+              <ul style="position: absolute; left: 20%; background: #f3f3f3; width: 60%; padding: 1em 0; border-radius: 8px;" class="filter-btn-list">
                 <li class="filter-btn-item">
                   <button class="filter-btn active" data-filter-btn="all">Todos los productos</button>
                 </li>
@@ -983,45 +983,49 @@
 </section>
 
 
+
+
 <!-- 
     - PREGUNTAS FRECUENTES
   -->
 <section id="faq" style="max-width:700px; margin:2em auto; padding:2em; background:#fff; border-radius:10px;">
   <h2 style="font-size:2em; margin-bottom:1em;">Preguntas Frecuentes</h2>
 
-  <div>
-    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display='block'; return false;">
+  <div style="margin-bottom: 10px;">
+    <button 
+      style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; border-radius:6px; transition:background 0.2s;"
+      onclick="let d=this.nextElementSibling; d.style.display=d.style.display==='block'?'none':'block'; this.querySelector('.arrow').style.transform=d.style.display==='block'?'rotate(90deg)':'rotate(0deg)'; return false;">
       ¿Por qué confiar en nosotros?
+      <span class="arrow" style="display:inline-block; transition:transform 0.2s;">&#9654;</span>
     </button>
-    <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d;">
+    <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d; border-radius:0 0 6px 6px;">
       Porque en <strong>Materiales Salas</strong> ofrecemos productos de calidad, atención personalizada y años de experiencia en el sector.
     </div>
   </div>
 
-  <div>
-    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display='block'; return false;">
+  <div style="margin-bottom: 10px;">
+    <button 
+      style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; border-radius:6px; transition:background 0.2s;"
+      onclick="let d=this.nextElementSibling; d.style.display=d.style.display==='block'?'none':'block'; this.querySelector('.arrow').style.transform=d.style.display==='block'?'rotate(90deg)':'rotate(0deg)'; return false;">
       ¿Puedo comprar si estoy en provincia? ¿Cómo pago?
+      <span class="arrow" style="display:inline-block; transition:transform 0.2s;">&#9654;</span>
     </button>
-    <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d;">
+    <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d; border-radius:0 0 6px 6px;">
       Sí, enviamos a todo el país. Puedes pagar con tarjeta, transferencia o en efectivo en tienda.
     </div>
   </div>
 
-  <div>
-    <button style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer;" onclick="this.nextElementSibling.style.display='block'; return false;">
+  <div style="margin-bottom: 10px;">
+    <button 
+      style="width:100%; text-align:left; font-size:1.1em; padding:1em; border:none; background:#f5f5f5; margin-bottom:5px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; border-radius:6px; transition:background 0.2s;"
+      onclick="let d=this.nextElementSibling; d.style.display=d.style.display==='block'?'none':'block'; this.querySelector('.arrow').style.transform=d.style.display==='block'?'rotate(90deg)':'rotate(0deg)'; return false;">
       ¿Cómo sé qué producto me conviene más?
+      <span class="arrow" style="display:inline-block; transition:transform 0.2s;">&#9654;</span>
     </button>
-    <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d;">
+    <div style="display:none; padding:1em; background:#fafafa; border-left:3px solid #00509d; border-radius:0 0 6px 6px;">
       Nuestro equipo puede asesorarte según tu proyecto. Contáctanos o visita la tienda para recibir ayuda personalizada.
     </div>
   </div>
-
-  
-
-
-
-
-
 </section>
 
 <section id="beneficios" style="margin: 2em 0;">
@@ -1053,7 +1057,7 @@
     </div>
     <div style="display: flex; align-items: center; gap: 10px; min-width: 220px;">
       <ion-icon name="card-outline" style="font-size: 1.5em;"></ion-icon>
-      <span>Financia hasta en <b>12 cuotas</b> con tarjeta</span>
+      <span>Financia hasta en <b>12 cuotas</b> with tarjeta</span>
     </div>
     <div style="display: flex; align-items: center; gap: 10px; min-width: 220px;">
       <ion-icon name="storefront-outline" style="font-size: 1.5em;"></ion-icon>
@@ -1066,7 +1070,7 @@
   </div>
 </section>
 
-  <footer class="footer">
+  <footer class="footer" style="background: #f3f3f3;">
     <div class="container">
 
       <div class="footer-top section">
@@ -1154,12 +1158,11 @@
 
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom" style="background: #181818; color: #fff; padding: 1.5em 0; text-align: center; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; border-radius: 0;">
 
-        <p class="copyright">
-          &copy; 2025 Todos los derechos reservados por <a href="#" class="copyright-link">Materiales Salas</a>.
-        </p>
-
+        <p class="copyright" style="margin:0;">
+    &copy; 2025 Todos los derechos reservados por <a href="#" class="copyright-link" style="color: #fff; text-decoration: underline;">Materiales Salas</a>.
+  </p>
       </div>
 
     </div>
